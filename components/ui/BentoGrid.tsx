@@ -43,8 +43,18 @@ export const BentoGridItem = ({
   titleClassName: string;
   spareImg: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = [
+    "ReactJS",
+    "Express",
+    "Typescript",
+    "postgreSQL",
+  ];
+  const rightLists = [
+    "NodeJS",
+    "NextJS",
+    "GraphQL",
+    "MongoDB",
+  ];
 
   return (
     <div
@@ -128,7 +138,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-50 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -141,7 +151,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-50 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
