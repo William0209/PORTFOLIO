@@ -78,11 +78,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Furniture Website",
-    des: "A furniture website with clean and minimal design with smooth animations.",
+    title: "Interior Designer Website",
+    des: "A Interior website with clean and minimal design and smooth animations.",
     img: "/p1.png",
     iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-    link: "https://github.com/William0209/furniture1",
+    link: "https://william0209.github.io/InteriorDesign-FRONT/",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ export const projects = [
     des: "My previous prtfolio which i grew out of, still a great project.",
     img: "/p2.jpg",
     iconLists: ["/re.svg", "/css.svg", "/html.svg"],
-    link: "https://github.com/William0209/portf-lj1",
+    link: "https://wjporto.tech/",
   },
   {
     id: 3,
@@ -110,7 +110,12 @@ export const projects = [
     title: "Anime website",
     des: "First real next.js project, enhanced my skills in next 14, framer motion, pagination and tailwind.css",
     img: "/p4.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/fm.svg",
+    ],
     link: "https://github.com/William0209/anime_project",
   },
 ];
