@@ -90,7 +90,7 @@ export const projects = [
     des: "My previous prtfolio which i grew out of, still a great project.",
     img: "/p2.jpg",
     iconLists: ["/re.svg", "/css.svg", "/html.svg"],
-    link: "https://wjporto.tech/",
+    link: "https://github.com/William0209/portf-lj1",
   },
   {
     id: 3,
@@ -123,33 +123,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "När jag inte studerar, älskar jag att utforska nya recept och smaker från olika kulturer. Att laga mat är som ett litet kulinariskt äventyr för mig!",
+    name: "Me, msyelf and I",
+    title: "Matäventyrare",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Fiske är min fristad – där finner jag både ro och glädje i naturen, samtidigt som jag alltid hoppas på den stora fångsten.",
+    name: "Me, msyelf and I",
+    title: "Naturälskare med ett spö",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Jag värdesätter tid med mina nära och kära mer än något annat. Det är där jag tankar energi och får min dag att lysa upp!",
+    name: "Me, msyelf and I",
+    title: "Familj och vänner är allt",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Jag kan också varva ner med något riktigt gott att äta, framför en spännande film eller serie – det är min definition av avslappning!",
+    name: "Me, msyelf and I",
+    title: "",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Jag värdesätter tillit och öppen kommunikation, både i privatlivet och på jobbet. Att bygga starka relationer grundade på respekt och förståelse är något jag alltid strävar efter.",
+    name: "Me, msyelf and I",
+    title: "Tillit och kommunikation är nyckeln",
   },
 ];
 
@@ -189,29 +189,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Development",
+    desc: "I am learning to create responsive, visually appealing web interfaces using modern tools and frameworks.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Mobile Friendly",
+    desc: "I focus on ensuring websites work smoothly and look great on all devices and screen sizes.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "UI/UX",
+    desc: "I am exploring how to design user-friendly interfaces that balance function and aesthetics for a better user experience.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Backend Development",
+    desc: "I am gaining experience in building secure and scalable server-side logic to support web and mobile apps.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

@@ -1,3 +1,6 @@
+import Approach from "@/components/Approach";
+import Experience from "@/components/Experience";
+import FunFacts from "@/components/FunFacts";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -12,6 +15,9 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
+        <FunFacts />
+        <Experience />
+        <Approach />
       </div>
     </main>
   );
