@@ -91,7 +91,7 @@ export const projects = [
     des: "My previous prtfolio which i grew out of, still a great project.",
     img: "/p2.jpg",
     iconLists: ["/re.svg", "/css.svg", "/html.svg"],
-    link: "https://github.com/William0209/portf-lj1",
+    link: "https://wjporto.tech/",
   },
   {
     id: 3,
@@ -104,7 +104,7 @@ export const projects = [
       "/exp.svg",
       "/mdb.svg",
     ],
-    link: "https://github.com/William0209/MERN",
+    link: "https://mern-hcun.onrender.com/",
   },
   {
     id: 4,
@@ -117,7 +117,7 @@ export const projects = [
       "/ts.svg",
       "/fm.svg",
     ],
-    link: "https://github.com/William0209/anime_project",
+    link: "https://wjanime.netlify.app/",
   },
 ];
 

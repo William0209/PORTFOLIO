@@ -1,5 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, {
+  useState,
+  useEffect,
+} from "react";
 import { motion } from "framer-motion";
 
 import { cn } from "@/utils/cn";
@@ -17,9 +20,17 @@ export const PinContainer = ({
   className?: string;
   containerClassName?: string;
 }) => {
-  const [transform, setTransform] = useState(
-    "translate(-50%,-50%) rotateX(0deg)"
-  );
+  const [isClient, setIsClient] =
+    useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const [transform, setTransform] =
+    useState(
+      "translate(-50%,-50%) rotateX(0deg)"
+    );
 
   const onMouseEnter = () => {
     setTransform(
@@ -35,32 +46,53 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50  cursor-pointer",
+        "relative group/pin z-50 cursor-pointer",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div
-        style={{
-          perspective: "1000px",
-          transform: "rotateX(70deg) translateZ(0deg)",
-        }}
-        className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
-      >
-        <div
-          style={{
-            transform: transform,
-          }}
-          // remove  bg-black
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+      {isClient ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block h-full w-full"
         >
-          <div className={cn(" relative z-50 ", className)}>
-            {children}
+          <div
+            style={{
+              perspective: "1000px",
+              transform:
+                "rotateX(70deg) translateZ(0deg)",
+            }}
+            className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              style={{
+                transform: transform,
+              }}
+              className="absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+            >
+              <div
+                className={cn(
+                  "relative z-50",
+                  className
+                )}
+              >
+                {children}
+              </div>
+            </div>
           </div>
+          <PinPerspective
+            title={title}
+            href={href}
+          />
+        </a>
+      ) : (
+        <div className="h-full w-full">
+          {children}
         </div>
-      </div>
-      <PinPerspective title={title} href={href} />
+      )}
     </div>
   );
 };
@@ -93,7 +125,8 @@ export const PinPerspective = ({
         <div
           style={{
             perspective: "1000px",
-            transform: "rotateX(70deg) translateZ(0)",
+            transform:
+              "rotateX(70deg) translateZ(0)",
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
