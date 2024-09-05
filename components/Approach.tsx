@@ -17,7 +17,7 @@ const Approach = () => {
           description=" I focus on brainstorming and defining project goals. I develop clear plans, set timelines, and gather all necessary resources to ensure a smooth project flow."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            animationSpeed={3}
             containerClassName="bg-black" // Darker background for purple theme
             colors={[
               [216, 180, 254], // Lighter purple accent
